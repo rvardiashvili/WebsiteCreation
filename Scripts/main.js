@@ -39,24 +39,61 @@ scene.add(mesh3);
 
 var lastScrollTop = container[0].scrollTop;
 var limit = container[0].scrollHeight;
-console.log(limit)
-
 var currentSection = 0;
-var firstLoad = true;
+var firstLoad = [true, true, true, true];
 function scrollFunction(){
     var st = container[0].scrollTop;
     center.rotation.x = (st/limit) * 2 * Math.PI
     lastScrollTop = st;
     currentSection = Math.round(4*st/limit);
     console.log(currentSection);
-    if(currentSection == 1 && firstLoad){
-        TypeBulletPoint();
-        firstLoad = false;
+    if(currentSection == 0 && firstLoad[0]){
+        var ondone = function() {typeSingle(
+            document.getElementById("intro-text"),
+            "Transforming your vision into a stunning, responsive website.",
+            15,
+            false
+        );}
+        typeSingle(
+            document.getElementById("intro-header"),
+            "Web Developement Services",
+            15,
+            false,
+            ondone
+        )
+        firstLoad[0] = false
     }
-
+    if(currentSection == 1 && firstLoad[1]){
+        var ondone = function() {TypeBulletPoint()};
+        typeSingle(
+            document.getElementById("service-header"),
+            "My Services",
+            15,
+            false,
+            ondone
+        );
+        firstLoad[1] = false;
+    }
+    if(currentSection == 2 && firstLoad[2]){
+        var ondone = function(){typeSingle(
+            document.getElementById("why-me"),
+            "I blend creativity with technical expertise to deliver outstanding digital experiences. I am dedicated to ensuring your website stands out in the digital landscape.",
+            15
+        );}
+        typeSingle(
+            document.getElementById("why-me-header"),
+            "Why Choose Me?",
+            15,
+            false,
+            ondone
+        );
+        firstLoad[2] = false;
+    }
+    
 }
 
 
+scrollFunction();
 container[0].onscroll = scrollFunction;
 
 function animate(){

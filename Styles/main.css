@@ -39,7 +39,7 @@ section{
     background-color: rgba(0, 0, 0, 0.534);
 }
 .section2{
-    background-color: rgba(0, 10, 29, 0.534);
+    background-color: rgba(0, 0, 0, 0.534);
     backdrop-filter: blur(6px);
 
 }
@@ -49,12 +49,12 @@ section{
 
 }
 .section4{
-    background-color: rgba(29, 0, 0, 0.534);
+    background-color: rgba(0, 18, 29, 0.534);
     backdrop-filter: blur(6px);
-
+    
 }
 .section5{
-    background-color: rgba(29, 0, 28, 0.534);
+    background-color: rgba(24, 0, 29, 0.534);
     backdrop-filter: blur(6px);
 
 }
@@ -110,6 +110,7 @@ form {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.616);
     width: 80vh;
     max-width: 600px;
+
 }
 
 form label {
@@ -135,17 +136,22 @@ form textarea{
 
 
 form input[type="submit"] {
-    width: 100%; 
+    width: auto; 
     background: #00cccc;
-    color: #ffffff;
+    color: #313131;
     border: none;
     cursor: pointer;
+    font-weight: bolder;
     transition: 0.3s ease;
+    border-radius: 10px;
+    align-self: center;
+    justify-self: center;
+    text-align: center;
 }
 
 form input[type="submit"]:hover {
-    transform: scale(1.01);
-    background: #ff00ff;
+    transform: scale(1.1);
+    background: #00e0e0;
     color: #FFFFFF;
 }
 
@@ -190,17 +196,19 @@ body{
     overflow: hidden;
 }
 ::-webkit-scrollbar {
-    width: 5px;
+    width: 10px;
+    border-radius: 10px;
 }
 
 ::-webkit-scrollbar-track {
     border-radius: 10px;
-    background: #474747; 
+    background: #272727; 
+
 }
 
 ::-webkit-scrollbar-thumb {
     border-radius: 10px;
-    background: #747474; 
+    background: #8f8f8f; 
 }
 
 
