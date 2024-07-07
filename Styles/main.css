@@ -15,7 +15,10 @@ canvas {
   }
 
 main{
-    position: relative;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
 }
 .container{
     scroll-snap-type: y mandatory;
@@ -204,11 +207,9 @@ body{
     h1 {
         font-size: 8vh;
     }
-
     h2 {
         font-size: 4vh;
     }
-
     p, li {
         font-size: 2.2vh;
     }
@@ -218,11 +219,9 @@ body{
     h1 {
         font-size: 6vh;
     }
-
     h2 {
         font-size: 3.5vh;
     }
-
     p, li {
         font-size: 2vh;
     }
@@ -232,15 +231,12 @@ body{
     h1 {
         font-size: 5vh;
     }
-
     h2 {
         font-size: 3vh;
     }
-
     p, li {
         font-size: 1.8vh;
     }
-
     section {
         padding: 10px;
     }
@@ -250,16 +246,16 @@ body{
     h1 {
         font-size: 4.5vh;
     }
-
     h2 {
         font-size: 2.5vh;
     }
-
     p, li {
         font-size: 1.5vh;
     }
-
     section {
         padding: 5px;
+    }
+    form {
+        width: 90%;
     }
 }
