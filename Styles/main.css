@@ -63,19 +63,18 @@ section{
 h1 {
     text-align: center;
     font-size: 10vh;
-    color: #FFFFFF; /* White for good visibility on dark background */
+    color: #FFFFFF; 
 }
-
 h2 {
     font-size: 5vh;
-    color: #FFFFFF; /* White for good visibility on dark background */
+    color: #FFFFFF; 
 }
 
 p {
     font-size: 2.5vh;
     max-width: 600px;
     margin: 0 auto;
-    color: #CCCCCC; /* Light gray for good contrast on dark background */
+    color: #CCCCCC; 
     text-align: center;
     
 }
@@ -85,19 +84,7 @@ ul {
     padding: 0;
 
 }
-.textAnim{
-    white-space: nowrap;
-    overflow: hidden;
-    animation: 
-        type 2s steps(14) 
-        cursor 0.4s step-end infinite alternate;
-}
-@keyframes cursor{
-    50%{border-color: transparent;}
-}
-@keyframes type {
-    from {width: 0;}
-}
+
 
 li {
     font-size: 2.5vh;
@@ -106,17 +93,16 @@ li {
 }
 
 a {
-    color: #00FFFF; /* Light blue color for links */
+    color: #00FFFF;
     text-decoration: none;
     border-bottom: 2px solid transparent;
     transition: color 0.3s ease, border-bottom 0.3s ease;
 }
 
 a:hover {
-    color: #FF00FF; /* Pink color on hover */
-    border-bottom: 2px solid #FF00FF; /* Underline on hover */
+    color: #FF00FF; 
+    border-bottom: 2px solid #FF00FF; 
 }
-
 form {
     background: #2c2c2c7a;
     padding: 20px;
@@ -171,7 +157,7 @@ form input[type="submit"]:hover {
     flex-direction: column;
     align-items: center;
     align-content: center;
-    color: #00cccc; /* Light blue color for links */
+    color: #00cccc; 
     background-color: #00000000;
 
     border-radius: 10px;
@@ -179,25 +165,23 @@ form input[type="submit"]:hover {
 }
 
 .contact-links a {
-    color: #00cccc; /* Light blue color for links */
+    color: #00cccc; 
     text-decoration: none;
-    margin: 10px; /* Adds spacing between links */
+    margin: 10px; 
 }
 
 .contact-links a:hover {
-    color: #ff00ff; /* Pink color on hover */
+    color: #ff00ff; 
     text-decoration: none;
-
 }
 .contact-links i{
     font-size: 4vh;
 }
 
-/* Styling for Font Awesome icons */
 .fas,
 .fab {
-    font-size: 2vh; /* Adjust icon size */
-    margin-right: 5px; /* Adds spacing between icon and text */
+    font-size: 2vh; 
+    margin-right: 5px;
 }
 
 body{
