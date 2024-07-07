@@ -27,7 +27,7 @@ function TypeBulletPoint(curLine = 0, obj = null){
     }
     else{
         object.innerText = text;
-        TypeBulletPoint(curLine+1, object);
+        setTimeout(function() {TypeBulletPoint(curLine+1, object);}, 1000/CharactersPerSecond);
     }
 }
 
