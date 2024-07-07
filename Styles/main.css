@@ -73,6 +73,7 @@ p {
     max-width: 600px;
     margin: 0 auto;
     color: #CCCCCC; /* Light gray for good contrast on dark background */
+    text-align: center;
 }
 
 ul {

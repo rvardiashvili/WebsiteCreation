@@ -4,7 +4,7 @@ const container = document.getElementsByClassName("container");
 const scene = new THREE.Scene();
 //create a new camera with positions and angles
 const center = new THREE.Group();
-const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+camera = new THREE.PerspectiveCamera( 20, upperDivElement.clientWidth / upperDivElement.clientHeight, 1, 10000 );
 center.add(camera);
 scene.add(center);
 const renderer = new THREE.WebGLRenderer({
