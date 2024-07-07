@@ -77,17 +77,34 @@ p {
     margin: 0 auto;
     color: #CCCCCC; /* Light gray for good contrast on dark background */
     text-align: center;
+    
 }
 
 ul {
     list-style-type:disc;
     padding: 0;
+
+}
+.textAnim{
+    white-space: nowrap;
+    overflow: hidden;
+    animation: 
+        type 2s steps(14) 
+        cursor 0.4s step-end infinite alternate;
+}
+@keyframes cursor{
+    50%{border-color: transparent;}
+}
+@keyframes type {
+    from {width: 0;}
 }
 
 li {
     font-size: 2.5vh;
-    color: #CCCCCC; /* Light gray for good contrast on dark background */
+    color: #CCCCCC; 
+
 }
+
 a {
     color: #00FFFF; /* Light blue color for links */
     text-decoration: none;

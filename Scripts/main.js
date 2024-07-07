@@ -43,13 +43,17 @@ var limit = container[0].scrollHeight;
 console.log(limit)
 
 var currentSection = 0;
-
+var firstLoad = true;
 function scrollFunction(){
     var st = container[0].scrollTop;
     center.rotation.x = (st/limit) * 2 * Math.PI
     lastScrollTop = st;
     currentSection = Math.round(4*st/limit);
     console.log(currentSection);
+    if(currentSection == 1 && firstLoad){
+        TypeBulletPoint();
+        firstLoad = false;
+    }
 
 }
 
@@ -76,6 +80,4 @@ function onWindowResize(){
 }
 
 animate();
-
-
 
