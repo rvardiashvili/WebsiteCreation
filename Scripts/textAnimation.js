@@ -15,7 +15,7 @@ function TypeBulletPoint(curLine = 0, obj = null){
     var point;
     var bullet = document.createElement("li");
     serviceList.appendChild(bullet);
-    typing(bullet, arr[curLine], curLine, 25);
+    typing(bullet, arr[curLine], curLine, 10); 
     
 }
 
