@@ -2,7 +2,6 @@ import * as THREE from "https://cdn.skypack.dev/three@0.129.0/build/three.module
 
 const container = document.getElementsByClassName("container");
 const scene = new THREE.Scene();
-//create a new camera with positions and angles
 const center = new THREE.Group();
 camera = new THREE.PerspectiveCamera( 20, upperDivElement.clientWidth / upperDivElement.clientHeight, 1, 10000 );
 center.add(camera);
